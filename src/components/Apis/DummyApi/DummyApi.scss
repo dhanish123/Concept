@@ -1,0 +1,15 @@
+.Outercards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    background-color: rgba(189, 219, 222, 0.484);
+    &__card{
+        border: 2px solid rgb(183, 117, 117);
+        border-radius: 6px;
+        padding: 10px;
+        text-align: center;
+        &:hover{
+            background-color: rgba(131, 150, 145, 0.416);
+        }
+    }
+}

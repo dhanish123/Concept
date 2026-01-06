@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="outer">
+      Outer Capture
+
+      <div id="inner">Inner Capture</div>
+    </div>
+   <script>
+    document.getElementById("outer")
+    .addEventListener('click',()=>{
+        alert("outer div")
+        
+    },true)
+    document.getElementById("inner")
+    .addEventListener("click",()=>{
+        alert('inner capture');
+        
+    },true)
+   </script>
+  </body>
+</html>
+
+<!-- true= event capturing -->
+
+<!-- 
+frist event gnerate from inner div then outer div = bubling
+if we need event captering , add optional parameter ,true -->
